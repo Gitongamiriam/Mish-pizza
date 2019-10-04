@@ -1,25 +1,20 @@
-ul,li,a {
-    display:inline;
-    text-decoration: none;
-    padding: 10px;
-    font-size: 20px;
-    color:red;
-    text-align: initial;
-    }
 h1{
-    color:red;
+    color:black;
     padding-top:30px;
     text-align:center;
     font-style:italic;
-    }
-nav{
-    text-align:right;
-    overflow:hidden;
-    top:0;
-    width:100%;
-    position:fixed;
-    }
-    body{
-        background-image:url("http://pngimg.com/uploads/pizza/pizza_PNG44089.png")
-    }
+}
+img{
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+.piti1,.piti2,  .piti3, .piti4, .piti5, .piti6, .piti7, .piti8 {
+    margin: 10px; 
+    cursor: pointer;  
+    float:left;
+    list-style:none;
+    overflow:hidden; 
+    background: white;
+   }
+
     
