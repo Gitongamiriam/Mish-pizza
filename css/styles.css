@@ -64,3 +64,16 @@ h4{
     font-style: italic;
     text-align: center;
 }
+#form2{
+    text-align: center;
+    font-size:40px;
+}
+.input{
+    width:20%;
+    height:30px;
+    padding:12px;
+}
+label{
+    display: flow-root;
+    color:red;
+}
