@@ -1,20 +1,66 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
 h1{
     color:black;
-    padding-top:30px;
+     padding-top:20px; 
     text-align:center;
     font-style:italic;
+    padding-top:300px;
+    font-size:100px;
+    color:red;
 }
-img{
-    background-size:100%;
-    background-repeat: no-repeat;
-}
-.piti1,.piti2,  .piti3, .piti4, .piti5, .piti6, .piti7, .piti8 {
-    margin: 10px; 
-    cursor: pointer;  
-    float:left;
-    list-style:none;
-    overflow:hidden; 
-    background: white;
-   }
 
-    
+/* form{
+    font-family:italic;
+    font-size:30px;
+    background-color:#211e1e;
+    color:white;
+    border-radius:5px;
+    height:auto;
+    width:450px;
+    text-align:center;
+
+} */
+#home{
+    background-image:url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&w=1000&q=80"); 
+   background-repeat: no-repeat;
+   height: 100vh;
+   text-align: center;
+   background-size:cover;
+
+}
+#hide1{
+    display:none;
+}
+#hide2{
+    display:none;
+}
+#hide3{
+    display:none;
+}
+#img3{
+    float: left;
+    padding: 20px;
+    margin:5%;
+}
+#img4{
+    float: left;
+    padding:20px;
+    margin:5%;
+}
+#img5{
+    margin:5%;
+    padding:20px;
+    float:left;
+}
+h4{
+    padding-top:40px;
+    color:red;
+    font-size:40px;
+    font-style: italic;
+    text-align: center;
+}

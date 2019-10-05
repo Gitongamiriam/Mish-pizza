@@ -2,69 +2,111 @@
 <html>
     <head>
         <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-        <script src="js/scripts.js" type="text/javascript"></script>
+        <script src="js/scripts.js"></script>
         <link href="css/styles.css" type="text/css" rel="stylesheet">
         <link href="css/bootstrap.css" type="text" rel="stylesheet">
         <title>MISHY PIZZA</title>
     </head>
     <body>
-    <div id ="home">
-        <h1>WELCOME TO MISHY PIZZA STORE<BR>IT MUST BE THE PIZZA </h1>
-            <img src="http://pngimg.com/uploads/pizza/pizza_PNG44089.png">
+        <div id="home">
+            <h1>WELCOME TO MISSHY PIZZA<br>IT MUST BE THE PIZZA</h1>
 
-            <div class="container">
-                    <div class="pizza">
-                        <h3>OUR PIZZA MENU</h3>
+        </div>
+        <h4>TYPES OF PIZZA</h4>
+        <div class="row">
+                <div class="col-sm-4">
+                        <div id ="img3">
+                            <div id="show1">
+                                <img src="images/p3.jpg" height=300px width=300px>
+                                <h3>HAWAI</h3>
+                            </div>
+                            <div id="hide1">
+                                <h3>HAWAI</h3>
+                                <p>AMOUNT <br>
+                                   small = ksh 500<br>
+                                   medium = ksh 750<br>
+                                   large = ksh 1000<br>
+                                </p>
+                            </div>
+                </div> 
+                </div>       
+                           <div class="col-sm-4">
+                                <div id ="img4">
+                                        <div id="show2">
+                                                <img src="./images/p4.jpeg" height=300px width=300px>
+                                                <h3>CHEESE</h3>
+
+                                        </div>
+                                        <div id="hide2">
+                                                <h3>CHEESE</h3>
+                                                <p>AMOUNT<br>
+                                                  small=ksh 500<br>
+                                                  medium = ksh 750<br>
+                                                  large = ksh 1500<br>
+                                                </p>                                      
+
+                                                </div>
+                                            </div>
+                           </div>         
+                           <div id ="col-um-4">
+                                <div id ="img5">
+                                        <div id="show3">
+                                            <img src="./images/p3.jpg" height=300px width=300px>
+                                            <H3>CHICKEN</H3>
+                                        </div>
+                                        <div id="hide3">
+                                                <h3>CHICKEN</h3>
+                                                <p>AMOUNT<br>
+                                                    small = ksh 600<br>
+                                                    medium = ksh 1000<br>
+                                                    large = ksh 1400<br>
+                                             </p>
+                                        </div>
+
+                                    </div>
+                           </div>
+
+
+        </div>
+
+
+
+                <div id = "form2">
+                    <form class ="submit">
+                        <h2>Order NOW!!</h2>
+                            <label>Pizza size</label>
+                             <select name="size" class="input" id="sizeinput">
+                              <option value=""></option>
+                               <option value="">Small</option>
+                               <option value="">Medium</option>
+                               <option value="">Large</option>
+                             </select><br>
+                            <label>Pizza crust</label>
+                             <select name="Crust" class="input" id="crustinput">
+                               <option value=""></option>
+                               <option value="">Thin Crust</option>
+                               <option value="">Thick Crust</option>
+                               <option value="">Deep Crust</option>
+                               <option value="">Cheese Filled Crust</option>
+                               <option value="">Stuffed Crust</option>
+                             </select><br>
+                            <label>Pizza toppings</label>
+                            <select name="toppings" class="input" id="toppingsinput">
+                               <option value=""></option>
+                               <option value="">Bacon</option>
+                               <option value="">Cheese</option>
+                               <option value="">Green peppers</option>
+                               <option value="">Extra cheese</option>
+                               <option value="">Pepperoni</option>
+                               <option value="">Black olives</option>
+                               <option value="">Pineapple</option>
+                             </select><br>
+                             <label>Quantity</label>
+                               <input type="text" name="howmany" value=""><br id="quantityinput">
+                               <button type="button" name="button" class="btnplaceorder">Order</button>
+                        </form>
                     </div>
-                    <div class="row">
-                        
-                        <div class="col-sm-3">
-                            <div class="piti1">
-                                <img src="./images/p7.jpg"  width="250px" title="">
-                            </div>  
-                        </div>
-
-                        
-                        <div class="col-sm-3">
-                            <div class="piti2">
-                                <img src="./images/p5.jpeg"   width="250px" title="">
-                                </div>
-
-                        </div>
-                        <div class="col-sm-3">
-                                <div class="piti3">
-                                <img src="./images/p4.jpeg"   width="250px" title="">
-                                </div>
-                        </div>
-                        <div class="col-sm-3">
-                                <div class="piti4">
-                                <img src="./images/p3.jpg"   width="250px" title="">
-                                </div>
-                        </div>
-                    </div><br><br>
-                    <div class="row">
-                        <div class="col-sm-3">
-                                <div class="piti5">
-                            <img src="./images/pizza-on-wood.jpg"   width="250px" title="">
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                                <div class="piti6">
-                            <img src="./images/p2.jpg"   width="250px" title=" ">
-                            </div>
-                         </div>
-                        <div class="col-sm-3">
-                                <div class="piti7">
-                            <img src="./images/p1.webp"   width="250px" title=""> 
-                            </div>
-                        </div>
-                        <div class="col-sm-3">
-                                <div class="piti8">
-                             <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&w=1000&q=80"   width="250px" title="">
-                             </div>
-                         </div>
-                    </div>
-                </div>
+                             
 
     </body>
 </html>
