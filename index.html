@@ -72,7 +72,7 @@
 
 
 
-             <div id= "form2">
+             <!-- <div id= "form2">
                     <form class="submit">
                         <h2>Order Now!!</h2>
                             <label>Pizza size</label>
@@ -120,7 +120,58 @@
                                
                         </form>
                     </div>
-                             
+                              -->
+                              <form id= "form2" action="index.html">
+                                    <h2>Order Now!!</h2>
+                                        <label>Pizza size</label>
+                                         <select name="size" class="input" id="size">
+                                          <option value=""></option>
+                                           <option value="1">Small</option>
+                                           <option value="2">Medium</option>
+                                           <option value="3">Large</option>
+                                         </select><br>
+                                         <label>Pizza type</label>
+                                         <select name="type" class="input" id="type">
+                                           <option value=""></option>
+                                           <option value="Hawai">Hawai</option>
+                                           <option value="chicken">chicken</option>
+                                           <option value="Cheese">Cheese</option>
+                                           <option value="Pineapples">Pineapples</option>
+                                           <option value=""></option>
+                                         </select><br>
+                                        <label>Pizza crust</label>
+                                         <select name="Crust" class="input" id="crust">
+                                           <option value=""></option>
+                                           <option value="Thin Crust">Thin Crust</option>
+                                           <option value="Thick Crust">Thick Crust</option>
+                                           <option value="Deep Crust">Deep Crust</option>
+                                           <option value="Cheese Filled Crust">Cheese Filled Crust</option>
+                                           <option value="Stuffed Crust">Stuffed Crust</option>
+                                         </select><br>
+                                        <label>Pizza toppings</label>
+                                        <select name="toppings" class="input" id="toppings">
+                                           <option value=""></option>
+                                           <option value="Cheese">Cheese</option>
+                                           <option value="Green peppers">Green peppers</option>
+                                           <option value="Bacon">Bacon</option>
+                                           <option value="Pepperoni">Pepperoni</option>
+                                           <option value="Black olives">Black olives</option>
+                                           <option value="Pineapple">Pineapple</option>
+                                         </select><br>
+            
+                                         <label>Delivery</label><br>
+                                         <select id="delivery-option">
+                                            <option value=""></option>
+                                            <option value="1">Delivery</option>
+                                            <option value="2">No Delivery</option>
+                                        </select><br><br>
+                                         <label>Quantity</label>
+                                           <input type="number" class="input"value="" id="quantity">
+                                           <button type="submit" class="btn btn-outline-danger" id="button" onclick="return totalPrice();">Checkout</button>
+                                           
+                                    </form>
+                                </div> 
+            
 
     </body>
 </html>
