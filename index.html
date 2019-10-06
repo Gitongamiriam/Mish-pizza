@@ -5,7 +5,7 @@
         <script src="js/scripts.js"></script>
         <link href="css/styles.css" type="text/css" rel="stylesheet">
         <link href="css/bootstrap.css" type="text" rel="stylesheet">
-        <title>MISHY PIZZA</title>
+        <title>MISsHY PIZZA</title>
     </head>
     <body>
         <div id="home">
@@ -78,38 +78,43 @@
                             <label>Pizza size</label>
                              <select name="size" class="input" id="size">
                               <option value=""></option>
-                               <option value="">Small</option>
-                               <option value="">Medium</option>
-                               <option value="">Large</option>
+                               <option value="small">Small</option>
+                               <option value="medium">Medium</option>
+                               <option value="large">Large</option>
                              </select><br>
                              <label>Pizza type</label>
                              <select name="type" class="input" id="type">
                                <option value=""></option>
-                               <option value="">Hawai</option>
-                               <option value="">chicken</option>
-                               <option value="">Cheese</option>
-                               <option value="">Pineapples</option>
+                               <option value="Hawai">Hawai</option>
+                               <option value="chicken">chicken</option>
+                               <option value="Cheese">Cheese</option>
+                               <option value="Pineapple">Pineapple</option>
                                <option value=""></option>
                              </select><br>
                             <label>Pizza crust</label>
                              <select name="Crust" class="input" id="crust">
                                <option value=""></option>
-                               <option value="">Thin Crust</option>
-                               <option value="">Thick Crust</option>
-                               <option value="">Deep Crust</option>
-                               <option value="">Cheese Filled Crust</option>
-                               <option value="">Stuffed Crust</option>
+                               <option value="thin crust">Thin Crust</option>
+                               <option value="thick crust">Thick Crust</option>
+                               <option value="deep crust">Deep Crust</option>
+                               <option value="Cheese">Cheese Filled Crust</option>
+                               <option value="stufed crust">Stuffed Crust</option>
                              </select><br>
                             <label>Pizza toppings</label>
                             <select name="toppings" class="input" id="toppings">
                                <option value=""></option>
-                               <option value="">Cheese</option>
-                               <option value="">Green peppers</option>
-                               <option value="">Bacon</option>
-                               <option value="">Pepperoni</option>
-                               <option value="">Black olives</option>
-                               <option value="">Pineapple</option>
+                               <option value="Cheese">Cheese</option>
+                               <option value="green peppers">Green peppers</option>
+                               <option value="Bacon">Bacon</option>
+                               <option value="Pepperoni">Pepperoni</option>
+                               <option value="black olives">Black olives</option>
+                               <option value="Pineapple">Pineapple</option>
                              </select><br>
+                             <label>Delivery</label>
+                             <select id="delivery-option">
+                             <option value="1">delivery</option>
+                             <option value="2">no delivery</option>
+                             </select>
                              <label>Quantity</label>
                                <input type="number" class="input"value=""><br id="quantity">
                                <input type="submit" name="submit" value="submit"  onsubmit="reset()">
