@@ -12,9 +12,10 @@
             <h1>WELCOME TO MISSHY PIZZA<br>IT MUST BE THE PIZZA</h1>
 
         </div>
-        <h4>TYPES OF PIZZA</h4>
+        <div id="pizza">
+           <h4>TYPES OF PIZZA</h4>
         <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-4">
                         <div id ="img3">
                             <div id="show1">
                                     <h3>HAWAI</h3>
@@ -25,12 +26,12 @@
                                 <p>AMOUNT <br>
                                    small = ksh 500<br>
                                    medium = ksh 750<br>
-                                   large = ksh 1000<br>
+                                   large = ksh 1500<br>
                                 </p>
                             </div>
                 </div> 
                 </div>       
-                           <div class="col-sm-4">
+                           <div class="col-md-4">
                                 <div id ="img4">
                                         <div id="show2">
                                                 <h3>CHEESE</h3>
@@ -47,7 +48,7 @@
                                                 </div>
                                             </div>
                            </div>         
-                           <div id ="col-um-4">
+                           <div id ="col-md-4">
                                 <div id ="img5">
                                         <div id="show3">
                                                 <H3>CHICKEN</H3>
@@ -56,9 +57,9 @@
                                         <div id="hide3">
                                                 <h3>CHICKEN</h3>
                                                 <p>AMOUNT<br>
-                                                    small = ksh 600<br>
-                                                    medium = ksh 1000<br>
-                                                    large = ksh 1400<br>
+                                                    small = ksh 500<br>
+                                                    medium = ksh 750<br>
+                                                    large = ksh 1500<br>
                                              </p>
                                         </div>
 
@@ -67,21 +68,31 @@
 
 
         </div>
+   </div>
 
 
 
-             <div id = "form2">
-                    <form class ="submit">
-                        <h2>Order NOW!!</h2>
+             <div id= "form2">
+                    <form class="submit">
+                        <h2>Order Now!!</h2>
                             <label>Pizza size</label>
-                             <select name="size" class="input" id="sizeinput">
+                             <select name="size" class="input" id="size">
                               <option value=""></option>
                                <option value="">Small</option>
                                <option value="">Medium</option>
                                <option value="">Large</option>
                              </select><br>
+                             <label>Pizza type</label>
+                             <select name="type" class="input" id="type">
+                               <option value=""></option>
+                               <option value="">Hawai</option>
+                               <option value="">chicken</option>
+                               <option value="">Cheese</option>
+                               <option value="">Pineapples</option>
+                               <option value=""></option>
+                             </select><br>
                             <label>Pizza crust</label>
-                             <select name="Crust" class="input" id="crustinput">
+                             <select name="Crust" class="input" id="crust">
                                <option value=""></option>
                                <option value="">Thin Crust</option>
                                <option value="">Thick Crust</option>
@@ -90,19 +101,19 @@
                                <option value="">Stuffed Crust</option>
                              </select><br>
                             <label>Pizza toppings</label>
-                            <select name="toppings" class="input" id="toppingsinput">
+                            <select name="toppings" class="input" id="toppings">
                                <option value=""></option>
-                               <option value="">Bacon</option>
                                <option value="">Cheese</option>
                                <option value="">Green peppers</option>
-                               <option value="">Extra cheese</option>
+                               <option value="">Bacon</option>
                                <option value="">Pepperoni</option>
                                <option value="">Black olives</option>
                                <option value="">Pineapple</option>
                              </select><br>
                              <label>Quantity</label>
-                               <input type="text" name="howmany" value=""><br id="quantityinput">
-                               <button type="button" name="button" class="btnplaceorder">Order</button>
+                               <input type="number" class="input"value=""><br id="quantity">
+                               <input type="submit" name="submit" value="submit"  onsubmit="reset()">
+                               
                         </form>
                     </div>
                              
