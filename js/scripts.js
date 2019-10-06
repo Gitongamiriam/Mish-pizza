@@ -13,44 +13,47 @@ $(document).ready(function() {
     });
 });
 function Details(type, size, crust, toppings, quantity){
-    this.selectedType = type;
-    this.selectedSize = size;
-    this.selectedCrust = crust;
-    this.selectedToppings = toppings;
-    this.selectedQuantity = quantity;
-  }
-  
-  function Total(price, quantity,){
-    this.price = price;
-    this.quantity = quantity;
-  }
-  
-  Total.prototype.finalTotal = function(){
-    return this.price * this.quantity ;
-  }
-  
-  
-  $(document).ready(function(){
-    $('#form2').submit(function(event){
-      event.preventDefault();
-  
-      var sizePrices = [ small="500",medium="750",large="1500"];
-      var inputtedType = $('#type').val();
-      var inputtedCrust = $('#crust').val();
-      var inputtedToppings= $('#toppings').val();
-      var inputtedSize = parseInt($('#size').val());
-      var pizzaPrice = sizePrices[inputtedSize-1];
-      var inputtedQuantity = parseInt($('#quantity').val());
-  
-      var newDetails = new Details(inputtedType, inputtedSize, inputtedCrust, inputtedToppings, inputtedQuantity);
-      var newTotal = new Total(pizzaPrice, inputtedQuantity);
-      var newBill = newTotal.finalTotal();
-  
-  
-      alert("your order is " + newDetails.selectedType + ", " + newDetails.selectedToppings + ', and ' + newDetails.selectedCrust +". click ok to view your bill");
-      alert(newBill +"");
-  
-      document.getElementById('form2').reset();
-  
-    });
+  this.selectedType = type;
+  this.selectedSize = size;
+  this.selectedCrust = crust;
+  this.selectedToppings = toppings;
+  this.selectedQuantity = quantity;
+}
+
+function Total(price, quantity, delivery){
+  this.price = price;
+  this.quantity = quantity;
+  this.delivery = delivery;
+}
+
+Total.prototype.finalTotal = function(){
+  return this.price * this.quantity + this.delivery;
+}
+
+$(document).ready(function(){
+  $('#form2').submit(function(event){
+    event.preventDefault();
+
+    var selectedDeliver = parseInt($('#delivery-option').val());
+    var deliverPrices = [200, 0]
+    var sizePrices = [600, 900, 1200];
+    var inputtedType = $('#type').val();
+    var inputtedCrust = $('#crust').val();
+    var inputtedTopping = $('#toppings').val();
+    var inputtedSize = parseInt($('#size').val());
+    var pizzaPrice = sizePrices[inputtedSize-1];
+    var inputtedQuantity = parseInt($('#quantity').val());
+    var deliveryPrice = deliverPrices[selectedDeliver-1];
+
+    var newDetails = new Details(inputtedType, inputtedSize, inputtedCrust, inputtedTopping, inputtedQuantity);
+    var newTotal = new Total(pizzaPrice, inputtedQuantity, deliveryPrice);
+    var newBill = newTotal.finalTotal();
+
+
+    alert("your order is " + newDetails.selectedType + ", " + newDetails.selectedToppings + ', and ' + newDetails.selectedCrust +". click ok to view your bill");
+    alert(newBill +"");
+
+    document.getElementById('form2').reset();
+
   });
+});
