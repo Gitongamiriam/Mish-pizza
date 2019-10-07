@@ -36,7 +36,7 @@ $(document).ready(function(){
 
     var selectedDeliver = parseInt($('#delivery-option').val());
     var deliverPrices = [250, 0]
-    var sizePrices = [500, 750, 1500];
+    var sizePrices = [750, 1000, 1500];
     var inputtedType = $('#type').val();
     var inputtedCrust = $('#crust').val();
     var inputtedTopping = $('#toppings').val();
